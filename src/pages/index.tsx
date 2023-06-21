@@ -1,6 +1,6 @@
 import { NextPage } from "next";
+import Footer from "~/components/footer";
 import Nav from "../components/nav";
-import image from "../public/pictures/Zürich Panorama.jpeg";
 
 const Home: NextPage = () => {
   return (
@@ -8,62 +8,32 @@ const Home: NextPage = () => {
       <Nav />
 
       <div className="hero min-h-screen">
-        <div className="hero-overlay bg-opacity-60">
-          <img src={"../public/pictures/Zürich Panorama.jpeg"} alt="" />
+        <div className="hero-overlay bg-opacity-100">
+          <img className="opacity-50 flex h-screen" src={'https://www.kirkerholidays.com/media/image-cache/71f8e2eb-33dd-4cda-bbca-e0ed12169097/1920-765-1-2392-1250/1479983794-shutterstock_319406804ejpg.jpg'} alt="" />
         </div>
-  <div className="hero-content text-center text-neutral-content">
-    <div className="max-w-md">
-      <h1 className="mb-5 text-5xl font-bold text-green-100">Green Marmot</h1>
-      <p className="mb-5 text-white font-mono">The smart city sleep-over</p>
-      <br/>
-      <a href="#" className="mt-8 bg-accent hover:bg-green-600 text-white font-bold py-4 px-8 rounded-full">Book Now</a>
-    </div>
-  </div>
-</div>
-
-      <header className="bg-white py-20">
-        <div className="container mx-auto text-center">
-          <h1 className="text-5xl font-bold text-accent">Welcome to Green Marmot</h1>
-          <p className="mt-4 text-lg text-green-900 font-mono ">Experience luxury at its finest</p>
-          <div>
-            <br/> <br/>
-          </div>
-          <a href="#" className="mt-8 bg-accent hover:bg-green-600 text-white font-bold py-4 px-8 rounded-full">Book Now</a>
-        </div>
-      </header>
-
-
-      {/* <section className="py-16">
-        <div className="container mx-auto">
-          <h2 className="text-3xl font-bold text-center">Featured Rooms</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
-            <div className="bg-white rounded-lg shadow-lg p-8">
-              <img src="room1.jpg" alt="Room 1" className="w-full mb-4 rounded-lg"/>
-                <h3 className="text-xl font-bold">Deluxe Room</h3>
-                <p className="mt-2 text-gray-600">Starting from $200 per night</p>
-            </div>
-            <div className="bg-white rounded-lg shadow-lg p-8">
-              <img src="room2.jpg" alt="Room 2" className="w-full mb-4 rounded-lg"/>
-                <h3 className="text-xl font-bold">Executive Suite</h3>
-                <p className="mt-2 text-gray-600">Starting from $300 per night</p>
-            </div>
-            <div className="bg-white rounded-lg shadow-lg p-8">
-              <img src="room3.jpg" alt="Room 3" className="w-full mb-4 rounded-lg"/>
-                <h3 className="text-xl font-bold">Penthouse</h3>
-                <p className="mt-2 text-gray-600">Starting from $500 per night</p>
+        <div className="hero-content text-center text-neutral-content flex">
+        <div className="card card-compact w-96 bg-white shadow-xl flex-5 ">
+            <figure><img src="https://greenmarmot.com/images/capsules/2_Kapselhotel.jpg" alt="Shoes" /></figure>
+            <div className="card-body">
+              <h2 className="card-title">Capsules</h2>
+              <p>Climb in to your own cosy and private capsule</p>
+              <div className="card-actions justify-end">
+                <button className="btn btn-success">Book Now</button>
+              </div>
             </div>
           </div>
+          <div className="flex-5 mx-auto ">
+            <h1 className="mb-5 text-5xl font-bold text-gray-100">Green Marmot</h1>
+            <p className="mb-5 text-white font-mono">The smart city sleep-over</p>
+            <br />
+            {/* <a href="#" className="mt-8 bg-accent hover:bg-success text-white font-bold py-4 px-8 rounded-full">Book Now</a> */}
+          </div>
+        
         </div>
-      </section> */}
+      </div>
 
-{/* 
-      <footer className="bg-gray-800 text-white py-8">
-        <div className="container mx-auto text-center">
-          <p>&copy; 2023 Hotel Name. All rights reserved.</p>
-        </div>
-      </footer> */}
-
-      </>
+      <Footer />
+    </>
 
   );
 };
