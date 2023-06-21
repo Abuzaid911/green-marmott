@@ -1,26 +1,27 @@
-import { type NextPage } from "next";
-import Nav from "../components/Nav"
-
+import { NextPage } from "next";
+import Nav from "../components/nav";
+import image from "../public/pictures/Zürich Panorama.jpeg";
 
 const Home: NextPage = () => {
-
   return (
     <>
+      <Nav />
 
-    <Nav/>
-
-    <div className="hero min-h-screen">
-  <div className="hero-overlay bg-opacity-60"></div>
+      <div className="hero min-h-screen">
+        <div className="hero-overlay bg-opacity-60">
+          <img src={"../public/pictures/Zürich Panorama.jpeg"} alt="" />
+        </div>
   <div className="hero-content text-center text-neutral-content">
     <div className="max-w-md">
-      <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
-      <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-      <button className="btn btn-primary">Get Started</button>
+      <h1 className="mb-5 text-5xl font-bold text-green-100">Green Marmot</h1>
+      <p className="mb-5 text-white font-mono">The smart city sleep-over</p>
+      <br/>
+      <a href="#" className="mt-8 bg-accent hover:bg-green-600 text-white font-bold py-4 px-8 rounded-full">Book Now</a>
     </div>
   </div>
 </div>
 
-      {/* <header className="bg-white py-20">
+      <header className="bg-white py-20">
         <div className="container mx-auto text-center">
           <h1 className="text-5xl font-bold text-accent">Welcome to Green Marmot</h1>
           <p className="mt-4 text-lg text-green-900 font-mono ">Experience luxury at its finest</p>
@@ -29,7 +30,7 @@ const Home: NextPage = () => {
           </div>
           <a href="#" className="mt-8 bg-accent hover:bg-green-600 text-white font-bold py-4 px-8 rounded-full">Book Now</a>
         </div>
-      </header> */}
+      </header>
 
 
       {/* <section className="py-16">
