@@ -9,15 +9,25 @@ const Home: NextPage = () => {
 
     <Nav/>
 
+    <div className="hero min-h-screen">
+  <div className="hero-overlay bg-opacity-60"></div>
+  <div className="hero-content text-center text-neutral-content">
+    <div className="max-w-md">
+      <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
+      <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+      <button className="btn btn-primary">Get Started</button>
+    </div>
+  </div>
+</div>
 
-      {/* <header className="bg-gray-200 py-20">
+      {/* <header className="bg-white py-20">
         <div className="container mx-auto text-center">
-          <h1 className="text-5xl font-bold">Welcome to Green Marmot</h1>
-          <p className="mt-4 text-lg">Experience luxury at its finest</p>
+          <h1 className="text-5xl font-bold text-accent">Welcome to Green Marmot</h1>
+          <p className="mt-4 text-lg text-green-900 font-mono ">Experience luxury at its finest</p>
           <div>
             <br/> <br/>
           </div>
-          <a href="#" className="mt-8 bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-full">Book Now</a>
+          <a href="#" className="mt-8 bg-accent hover:bg-green-600 text-white font-bold py-4 px-8 rounded-full">Book Now</a>
         </div>
       </header> */}
 
